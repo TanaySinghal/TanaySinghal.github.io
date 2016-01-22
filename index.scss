@@ -3,7 +3,9 @@ $div_color: rgba(0,0,0,0.75);
 
 body {
 	height: 100%;
-	background: url("http://oi67.tinypic.com/3026ro9.jpg") no-repeat center center;
+	background-image: url("http://oi67.tinypic.com/3026ro9.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: transparent;
@@ -77,6 +79,7 @@ nav ul {
 }
 /*end main page*/
 
+/*Begin about page*/
 .about {
 	background-color: $div_color;
 	border-radius: 5px;
@@ -120,6 +123,22 @@ nav ul {
 
 .about h2 {
 	text-align: center;
+}
+
+img {
+	opacity:0;
+	-moz-transition: opacity 1s; /* Firefox 4 */
+	-webkit-transition: opacity 1s; /* Safari and Chrome */
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+iframe {
+	opacity:0;
+	-moz-transition: opacity 1s; /* Firefox 4 */
+	-webkit-transition: opacity 1s; /* Safari and Chrome */
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
 }
 
 /*Begin project list*/
