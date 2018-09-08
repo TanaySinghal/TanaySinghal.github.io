@@ -1,46 +1,110 @@
+<!DOCTYPE html>
+
 <html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
 
-	<head>
-		<!-- Bootstrap links -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="index.css">
+  <style>
+  /* Overwriting */
+   #fp-nav ul li a span,
+   .fp-slidesNav ul li a span {
+      background:#EEE;
+    }
+  </style>
+</head>
 
-		<link rel="stylesheet" type="text/css" href="index.css">
-		<title>Tanay Singhal</title>
-	</head>
+<body>
+<div id="fullpage">
+  <div class="section" id="section0">
+    <div class="main-img parallax-img">
+      <div class="name-container">
+        <p class="name">Tanay Singhal</p>
+        <p class="name-description1">I'm a developer</p>
+        <p class="name-description2">(who also makes <a href="https://www.instagram.com/TanayStyle" target="_blank">gummy bear renders</a>)</p>
+      </div>
 
-	<body> 
-		<!--Background image-->
-		<!--<img src="images/main.jpg" /></a>-->
-		<!-- Nav bar -->
-		<nav>
-			<ul>
-				<li><a href ="index.html">Home</a></li>
-				<li><a href ="about.html">About</a></li>
-				<li><a href ="projects.html">Projects</a></li>
-			</ul>
-		</nav>
+      <div class="arrow">
+        <a><span></span>Scroll</a> <!-- Arrow button -->
+      </div>
+    </div>
+  </div>
 
-		<!-- Body -->
-		<div class = "main">
-			<br>
-			<p>Welcome to my website! Check out some of the <a href ="projects.html">projects</a> I have worked on, and find out more <a href ="about.html">about</a> me!</p>
+  <div class="section spatial-img parallax-img" id="section1">
+    <div class="blur-container spatial-img-blurred">
+      <div class="content">
+        <h1>Spatial Systems</h1>
+        <h2>AR/VR developer</h2>
+        <p>
+          At <a href="https://spatial.is/" target="_blank">Spatial</a>, among many of my contributions, I developed ThoughtFlow:<br>a tool for
+           collaboratively searching the web and taking notes in AR.
+        </p>
+        <div class="arrow">
+          <a><span></span>Scroll</a> <!-- Arrow button -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section ai-img parallax-img" id="section2">
+
+    <div class="blur-container ai-img-blurred">
+      <div class="content">
+        <h1>Self Driving Car</h1>
+        <h2>Stanford A.I. Summer Institute</h2>
+        <p>
+          For my final project, I built a virtual self-driving car powered by Python
+          neural networks. Check out the <a href="https://www.youtube.com/watch?v=2NdZ_V5dAqU" target="_blank">video</a>.
+          Also: <a href="https://github.com/TanaySinghal/SPCSAISelfDrivingCar/commits/master" target="_blank">source code</a> and <a href="https://docs.google.com/presentation/d/1xXO_7Bg8ZyLm-zM1HSCkV_fgWXu3mzTxOhFgWvq0Wmo" target="_blank">slide deck</a>.
+        </p>
+      </div>
+
+      <div class="arrow">
+        <a><span></span>Scroll</a> <!-- Arrow button -->
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section tank-img parallax-img" id="section3">
+    <div class="blur-container tank-img-blurred">
+      <div class="content">
+        <h1>Tank Multiplayer</h1>
+        <h2>Personal Project (Unity & C#)</h2>
+        <p>
+          This real-time multiplayer game kept students in my high school staying late
+          after school to play it. Check out the <a href="https://vimeo.com/288822052" target="_blank">Video</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-			<table style="width:100%; table-layout: fixed;">
-			  <tr>	
-			    <td>
-			    	<p><a href ="https://www.linkedin.com/in/tanay-singhal-6a716b7b">LinkedIn</a></p>
-			    </td>	
-			    <td>
-					<p><a href ="https://github.com/TanaySinghal">GitHub</a></p>
-			    </td>		
-			    <td>
-					<p><a href ="https://www.youtube.com/user/singhaltanay/videos?sort=p&view=0&flow=grid">YouTube Channel</a></p>
-			    </td>
-			  </tr>
-			</table>
-			
-		</div>
-	</body>
+<!-- Needed for snap scrolling -->
+<!-- Taken from https://alvarotrigo.com/fullPage/examples/scrollBar.html -->
+<script type="text/javascript" src="fullpage.js"></script>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+    var fullPage = new fullpage('#fullpage', {
+        /* anchors: ['Main', 'Spatial', 'SelfDriving', 'TankGame'], No anchors */
+        scrollBar: true,
+
+        navigation: true,
+        navigationPosition: 'right'
+    });
+
+    <!-- Arrow press jQuery -->
+    $(document).ready(function(){
+        $(".arrow a").click(function(){
+          fullPage.moveSectionDown();
+        });
+    });
+</script>
+
+</body>
 </html>
