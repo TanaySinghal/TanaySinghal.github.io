@@ -26,8 +26,9 @@ body, html {
   left: 0;
   width: 100%;
 
-  --fade-col: 180; /* Gray value */
-  background-color: rgba(var(--fade-col), var(--fade-col), var(--fade-col), 1);
+  --fade-col: 40;
+  --opacity: .3;
+  background-color: rgba(var(--fade-col), var(--fade-col), var(--fade-col), var(--opacity));
   background-blend-mode: multiply;
 
   background-attachment: fixed;
