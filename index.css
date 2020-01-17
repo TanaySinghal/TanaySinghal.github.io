@@ -102,7 +102,6 @@ body, html {
 .name-container {
   position: relative;
   max-width: var(--max-width-var);
-  max-height: 100%;
   top:0;
   padding: 20px;
   margin: auto;
@@ -147,7 +146,6 @@ body, html {
 /* ----- <CONTENT> ----- */
 .content {
   max-width: var(--max-width-var);
-  max-height: 100%;
   padding-bottom: 0px;
   margin: auto;
   text-align: left;
