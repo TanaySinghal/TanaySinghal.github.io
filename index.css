@@ -8,6 +8,7 @@ body, html {
   --shadow-col: #df75aa;
   --link-default-col: #F35585; /* old: F35585, resume: cd5c7e */
   --link-hover-col: #C02654;
+  --max-width-var: 700px;
 }
 
 /* ----- <IMAGES> ----- */
@@ -100,8 +101,7 @@ body, html {
 
 .name-container {
   position: relative;
-  width: 60%;
-  min-width: 700px;
+  max-width: var(--max-width-var);
   max-height: 100%;
   top:0;
   padding: 20px;
@@ -131,33 +131,25 @@ body, html {
 
 .name-description1 {
   font-size: 4rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.15em;
   font-weight:normal;
-  margin: 100px 0px 10px 0px; /* top/bottom right/left */
+  margin: 6% 0 6% 0; /* top right bottom left */
   color: var(--text-col);
 }
 
 .name-description2 {
   font-size: 1.5rem;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.13em;
   font-weight:normal;
-  margin: 40px 0px 10px 0px; /* top/bottom right/left */
+  margin: 4% 0 1% 0; /* top right bottom left */
   color: var(--text-col);
 }
 
-.name-description3 {
-  font-size: 1.5rem;
-  letter-spacing: 0.15em;
-  font-weight:normal;
-  margin: 40px 0px 10px 0px; /* top/bottom right/left */
-  color: var(--text-col);
-}
 /* ----- </FRONT PAGE> ----- */
 
 /* ----- <CONTENT> ----- */
 .content {
-  width: 60%;
-  width: 700px; /* min-width need better solution for mobile */
+  max-width: var(--max-width-var);
   max-height: 100%;
   padding-bottom: 0px;
   margin: auto;
@@ -170,7 +162,7 @@ body, html {
 
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   letter-spacing: 0.2em;
   font-weight:normal;
   margin: 10px 0px; /* top/bottom right/left */
@@ -193,7 +185,6 @@ p {
   font-weight: 400;
   letter-spacing: 0.1em;
   text-decoration: none;
-  line-height: 1.8rem;
 }
 
 a {
