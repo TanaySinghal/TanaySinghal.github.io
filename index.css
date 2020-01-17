@@ -2,8 +2,8 @@ body, html {
   height: 100%;
   margin: 0;
   font: 400 16px "Avenir Next", sans-serif;
-  --header-col: #EEE;
-  --text-col: #E4E4E4;
+  --header-col: #FFF;
+  --text-col: #EEE;
   --name-col: #F35585;
   --shadow-col: #df75aa;
   --link-default-col: #F35585; /* old: F35585, resume: cd5c7e */
@@ -52,12 +52,21 @@ body, html {
   */
 }
 
+.snap-img {
+  background-image: url("res/snap.jpg");
+}
+
+.snap-img-blurred {
+  background-image: url("res/snap_blurred.png");
+}
+
+
 .ctrl-labs-img {
-  background-image: url("res/ctrl-labs.jpg");
+  background-image: url("res/ctrl-labs-gray.jpg");
 }
 
 .ctrl-labs-img-blurred {
-  background-image: url("res/ctrl-labs-blurred.jpg");
+  background-image: url("res/ctrl-labs-gray-blurred.jpg");
 }
 
 .spatial-img {
@@ -129,7 +138,15 @@ body, html {
 }
 
 .name-description2 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  font-weight:normal;
+  margin: 40px 0px 10px 0px; /* top/bottom right/left */
+  color: var(--text-col);
+}
+
+.name-description3 {
+  font-size: 1.5rem;
   letter-spacing: 0.15em;
   font-weight:normal;
   margin: 40px 0px 10px 0px; /* top/bottom right/left */
@@ -164,7 +181,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 400;
   font-weight: normal;
   letter-spacing: 0.2em;
