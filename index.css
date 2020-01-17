@@ -49,8 +49,8 @@ body, html {
 
   /* Tint image
   background-color: #FCF3FF;
-  background-blend-mode: multiply;
-  */
+  background-blend-mode: multiply; */
+ 
 }
 
 .snap-img {
@@ -111,9 +111,6 @@ body, html {
 }
 
 .name-container a {
-  /* TODO 
-  FF66B3
-  */
   text-shadow: 0px 4px 8px var(--shadow-col);
 }
 

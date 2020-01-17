@@ -108,7 +108,7 @@
         <h1>Self-Driving Car</h1>
         <h2>Stanford A.I. Summer Institute [2016]</h2>
         <p>
-          For my final project, I worked with a partner to build a virtual self-driving car powered by 
+          For my final project, my partner and I built a virtual self-driving car in Unity powered by 
           neural networks. See <a href="https://www.youtube.com/watch?v=2NdZ_V5dAqU" target="_blank">video</a> and <a href="https://docs.google.com/presentation/d/1xXO_7Bg8ZyLm-zM1HSCkV_fgWXu3mzTxOhFgWvq0Wmo" target="_blank">slide deck</a>.
         </p>
       </div>
@@ -127,7 +127,7 @@
         <h2>Personal Project (Unity & C#) [2016]</h2>
         <p>
           This real-time multiplayer game kept students in my high school staying late
-          after school to play it. Check out the <a href="https://vimeo.com/288822052" target="_blank">video</a>.
+          after school to play it. See <a href="https://vimeo.com/288822052" target="_blank">video</a>.
         </p>
       </div>
     </div>
@@ -144,9 +144,10 @@
 
 <script type="text/javascript">
     var fullPage = new fullpage('#fullpage', {
-        /* anchors: ['Main', 'Spatial', 'SelfDriving', 'TankGame'], No anchors */
-        scrollBar: true,
-
+        // anchors: ['Main', 'Spatial', 'SelfDriving', 'TankGame'],
+        scrollBar: true, // this is what's causing the jittery scroll
+        css3: true,
+        scrollingSpeed: 600,
         navigation: true,
         navigationPosition: 'right'
     });
