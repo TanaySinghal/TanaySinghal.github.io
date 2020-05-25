@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/hapticlibrary/precache-manifest.4568f8c5c9a0a241a12c8dce139f6ffe.js"
+  "/hapticlibrary/precache-manifest.5853c46bf211c5e1badf827ae7cc6016.js"
 );
 
 self.addEventListener('message', (event) => {
