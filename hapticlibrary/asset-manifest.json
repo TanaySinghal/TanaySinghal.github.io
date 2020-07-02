@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/hapticlibrary/static/css/main.ed6a7b05.chunk.css",
-    "main.js": "/hapticlibrary/static/js/main.51e22401.chunk.js",
-    "main.js.map": "/hapticlibrary/static/js/main.51e22401.chunk.js.map",
+    "main.js": "/hapticlibrary/static/js/main.261beba9.chunk.js",
+    "main.js.map": "/hapticlibrary/static/js/main.261beba9.chunk.js.map",
     "runtime-main.js": "/hapticlibrary/static/js/runtime-main.c8506ba5.js",
     "runtime-main.js.map": "/hapticlibrary/static/js/runtime-main.c8506ba5.js.map",
     "static/js/2.53f0580a.chunk.js": "/hapticlibrary/static/js/2.53f0580a.chunk.js",
     "static/js/2.53f0580a.chunk.js.map": "/hapticlibrary/static/js/2.53f0580a.chunk.js.map",
     "index.html": "/hapticlibrary/index.html",
-    "precache-manifest.5853c46bf211c5e1badf827ae7cc6016.js": "/hapticlibrary/precache-manifest.5853c46bf211c5e1badf827ae7cc6016.js",
+    "precache-manifest.65c93fa1b82d90e03b5f57051dafd00a.js": "/hapticlibrary/precache-manifest.65c93fa1b82d90e03b5f57051dafd00a.js",
     "service-worker.js": "/hapticlibrary/service-worker.js",
     "static/css/main.ed6a7b05.chunk.css.map": "/hapticlibrary/static/css/main.ed6a7b05.chunk.css.map",
     "static/js/2.53f0580a.chunk.js.LICENSE.txt": "/hapticlibrary/static/js/2.53f0580a.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c8506ba5.js",
     "static/js/2.53f0580a.chunk.js",
     "static/css/main.ed6a7b05.chunk.css",
-    "static/js/main.51e22401.chunk.js"
+    "static/js/main.261beba9.chunk.js"
   ]
 }

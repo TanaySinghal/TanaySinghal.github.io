@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cb41567a9134192562c10f8caf2901c4",
+    "revision": "cf715e257fa6588946a7a3fffe640725",
     "url": "/hapticlibrary/index.html"
   },
   {
-    "revision": "3b1bedceac288afc930f",
+    "revision": "3358be0eec4ab42f2c2c",
     "url": "/hapticlibrary/static/css/main.ed6a7b05.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/hapticlibrary/static/js/2.53f0580a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3b1bedceac288afc930f",
-    "url": "/hapticlibrary/static/js/main.51e22401.chunk.js"
+    "revision": "3358be0eec4ab42f2c2c",
+    "url": "/hapticlibrary/static/js/main.261beba9.chunk.js"
   },
   {
     "revision": "39be5c6dbc0d509741db",
