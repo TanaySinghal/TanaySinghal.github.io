@@ -2,13 +2,24 @@ body, html {
   height: 100%;
   margin: 0;
   font: 400 16px "Avenir Next", sans-serif;
-  --header-col: #FFF;
-  --text-col: #EEE;
-  --name-col: #F35585;
-  --shadow-col: #df75aa;
-  --link-default-col: #F35585; /* old: F35585, resume: cd5c7e */
+  --theme-light: white;
+  --theme-dark: black;
+  --header-col: var(--theme-dark);
+  --text-col: var(--theme-dark);
+  --name-col: var(--theme-dark);
+  --arrow-col: var(--theme-dark);
+  /* old: F35585, resume: cd5c7e */
+  --link-default-col: #ff447c; 
   --link-hover-col: #C02654;
-  --max-width-var: 700px;
+  /* --link-default-col: blue;
+  --link-hover-col: blue; */
+
+  --max-width-var: 800px;
+  --letter-spacing-high: 0.16em;
+  --letter-spacing-low: 0.08em;
+
+  --font-size-title: 3rem;
+  --font-size-normal: 1.1rem;
 }
 
 /* ----- <IMAGES> ----- */
@@ -27,25 +38,20 @@ body, html {
   bottom: 0;
   left: 0;
   width: 100%;
-
-  --fade-col: 40;
-  --opacity: .3;
-  background-color: rgba(var(--fade-col), var(--fade-col), var(--fade-col), var(--opacity));
-  background-blend-mode: multiply;
-
+  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  /*box-shadow: 0px -3px 100px #222;*/
+  /* box-shadow: 0px -3px 100px #222; */
 
   /* hor, vert, blur, spread, color */
-  box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, .25);
+  box-shadow: 0px -4px 81px 0px rgba(0, 0, 0, 0.25);
 }
 
 .main-img {
-  background-image: url("res/gummybear.png");
+  background-image: url("res/gummybear-blurred.jpg");
 
   /* Tint image
   background-color: #FCF3FF;
@@ -58,16 +64,16 @@ body, html {
 }
 
 .snap-img-blurred {
-  background-image: url("res/snap_blurred.png");
+  background-image: url("res/snap_blurred50.jpg");
 }
 
 
 .ctrl-labs-img {
-  background-image: url("res/ctrl-labs-gray.jpg");
+  background-image: url("res/ctrl-labs.png");
 }
 
 .ctrl-labs-img-blurred {
-  background-image: url("res/ctrl-labs-gray-blurred.jpg");
+  background-image: url("res/ctrl-labs-blurred50.jpg");
 }
 
 .spatial-img {
@@ -75,7 +81,7 @@ body, html {
 }
 
 .spatial-img-blurred {
-  background-image: url("res/spatial_blurred.jpg");
+  background-image: url("res/spatial_blurred50.jpg");
 }
 
 .tank-img {
@@ -83,14 +89,14 @@ body, html {
 }
 
 .tank-img-blurred {
-  background-image: url("res/tankgame_blurred.jpg");
+  background-image: url("res/tankgame_blurred30.jpg");
 }
 
 .ai-img {
   background-image: url("res/selfdriving.jpg");
 }
 .ai-img-blurred {
-  background-image: url("res/selfdriving_blurred.jpg");
+  background-image: url("res/selfdriving_blurred50.jpg");
 }
 /* ----- </IMAGES> ----- */
 
@@ -103,40 +109,26 @@ body, html {
   position: relative;
   max-width: var(--max-width-var);
   top:0;
-  padding: 20px;
+  padding: 40px;
   margin: auto;
   text-align: center;
-  text-shadow: 0px 2px 8px rgba(0, 0, 0, .25);
-}
-
-.name-container a {
-  text-shadow: 0px 4px 8px var(--shadow-col);
+  /* text-shadow: 0px 2px 8px rgba(0, 0, 0, .25); */
 }
 
 .name {
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 4rem;
   font-weight: normal;
-  text-shadow: 0px 4px 8px var(--shadow-col);
-  letter-spacing: 0.2em;
+  letter-spacing: var(--letter-spacing-high);
   margin: 20px 0px; /* top/bottom right/left */
   text-align: center;
   color: var(--name-col);
   text-transform: uppercase;
 }
 
-.name-description1 {
-  font-size: 4rem;
-  letter-spacing: 0.15em;
-  font-weight:normal;
-  margin: 6% 0 6% 0; /* top right bottom left */
-  color: var(--text-col);
-}
-
-.name-description2 {
-  font-size: 1.5rem;
-  letter-spacing: 0.13em;
-  font-weight:normal;
+.name-description {
+  font-size: var(--font-size-normal);
+  letter-spacing: var(--letter-spacing-low);
+  font-weight: normal;
   margin: 4% 0 1% 0; /* top right bottom left */
   color: var(--text-col);
 }
@@ -149,7 +141,7 @@ body, html {
   padding-bottom: 0px;
   margin: auto;
   text-align: left;
-  padding: 0px 20px;
+  padding: 0px 40px;
   /* text-shadow: 0px 0px 50px #333; */
 
   color: var(--text-col);
@@ -157,9 +149,9 @@ body, html {
 
 
 h1 {
-  font-size: 3.5rem;
-  letter-spacing: 0.2em;
-  font-weight:normal;
+  font-size: var(--font-size-title);
+  letter-spacing: var(--letter-spacing-high);
+  font-weight: normal;
   margin: 10px 0px; /* top/bottom right/left */
 }
 
@@ -168,17 +160,18 @@ h1 {
 }
 
 h2 {
-  font-size: 1.45rem;
-  font-weight: 400;
+  font-size: var(--font-size-normal);
   font-weight: normal;
-  letter-spacing: 0.2em;
+  letter-spacing: var(--letter-spacing-high);
   margin: 10px 0px; /* top/bottom right/left */
+
+  text-transform: uppercase;
 }
 
 p {
-  font-size: 1.1rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
+  font-size: var(--font-size-normal);
+  font-weight: normal;
+  letter-spacing: var(--letter-spacing-low);
   text-decoration: none;
 }
 
@@ -189,11 +182,11 @@ a {
 }
 
 a:link, a:visited {
-    color: var(--link-default-col); /* old: F35585, resume: cd5c7e */
+  color: var(--link-default-col);
 }
 
 a:hover, a:active {
-    color: var(--link-hover-col);
+  color: var(--link-hover-col);
 }
 
 /* ----- </CONTENT> ----- */
@@ -205,56 +198,24 @@ a:hover, a:active {
 }
 .arrow a {
   position: absolute;
-  bottom: 10px;
+  bottom: 12px;
   left: 50%;
   padding-top: 55px;
 
-  color: #fff;
-  letter-spacing: .18em;
-  font-weight: 400;
+  color: var(--arrow-col);
+  letter-spacing: var(--letter-spacing-high);
+  font-weight: normal;
   text-transform: lowercase;
 
   transition: opacity 0.3s;
+  
 }
 
 .arrow a:hover {
   opacity: .5;
 }
 
-/* draws circle then arrow */
-/* default size: 46 px */
-/*.arrow a span {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  --size: 36px;
-  width: var(--size);
-  height: var(--size);
-  margin-left: calc(var(--size) * -0.5);
-  border: 1px solid #fff;
-  border-radius: 100%;
-  box-sizing: border-box;
-}
 
-/* default size 16 px
-.arrow a span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: '';
-  --size: 10px;
-  width: var(--size);
-  height: var(--size);
-  margin: calc(var(--size) * -0.75) 0 0 calc(var(--size) * -0.5);
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  box-sizing: border-box;
-}*/
-
-
-/* other style without circle */
 .arrow a {
   padding-top: 40px;
 }
@@ -265,13 +226,20 @@ a:hover, a:active {
   width: 24px;
   height: 24px;
   margin-left: -12px;
-  border-left: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border-left: 1px solid var(--arrow-col);
+  border-bottom: 1px solid var(--arrow-col);
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   box-sizing: border-box;
+  
+  margin-bottom: -10px;
 }
 
+ @keyframes arrow-anim {
+  0% {bottom: 12px;}
+  50% {bottom: 0px;}
+  100% {bottom: 12px;}
+} 
 
 /* ----- </ARROW> ----- */
 
