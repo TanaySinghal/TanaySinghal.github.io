@@ -59,6 +59,14 @@ body, html {
  
 }
 
+.oculus-img {
+  background-image: url("res/oculus.jpg");
+}
+
+.oculus-img-blurred {
+  background-image: url("res/oculus_blurred.jpg");
+}
+
 .snap-img {
   background-image: url("res/snap.jpg");
 }
